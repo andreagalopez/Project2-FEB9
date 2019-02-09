@@ -1,0 +1,142 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">"HOLA!"</a>
+
+        <form id="form" class="form-inline my-2 my-lg-0 ml-auto">
+
+            <a class="btn btn-outline-success my-2 my-sm-0" href="/index">Crear Evento</a>
+        </form>
+    </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="head">Eventos a los que estas invitado:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Evento</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Lugar</th>
+                        <th scope="col">Confirmacion@</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each invitedEvents}}
+                    <tr>
+                        <td><a href="#"> {{name}} </a></td>
+                        <td> {{date }} </td>
+                        <td> {{time}} </td>
+                        <td> {{place}} </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" id="confirmTrue" value="1">🗸</button>
+                            <button type="button" class="btn btn-danger" id="confirmFalse" value="0">✘</button>
+                        </td>
+
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">✔️</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">❌</label>
+                            </div>
+                        </td>
+
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <p>Eventos que tu creaste</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Eventos</th>
+                        <th scope="col">Invitad@</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td> <a href="#">Cumple Juan</a> </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary">✏️ Editar</button>
+                            <button type="button" class="btn btn-outline-danger">❌ Eliminar</button>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><a href="#">Cumple Chuy</a> </td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary">✏️ Editar</button>
+
+                            <button type="button" class="btn btn-outline-danger">❌ Eliminar</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><a href="">Cumple Jorge</a></td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary">✏️ Editar</button>
+                            <button type="button" class="btn btn-outline-danger">❌ Eliminar</button>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> --}}
+    </div>
+</div>
+
+<style>
+    nav {
+        opacity: 0.9;
+    }
+
+    .navbar-brand {
+        color: white;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    th {
+        color: white;
+        text-shadow: 2px 2px black;
+        text-align: center;
+    }
+
+    .head {
+        color: white;
+        text-shadow: 2px 2px black;
+        text-align: center;
+    }
+
+    body {
+        background-image: url("https://nyc3.digitaloceanspaces.com/servercarlosesverde/elevenews/wp-content/uploads/2018/12/12222219/Party.jpg");
+        background-color: blanchedalmond;
+        background-size: 100%;
+    }
+
+    form {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5cm;
+        width: 50%;
+        height: 50%;
+    }
+</style>

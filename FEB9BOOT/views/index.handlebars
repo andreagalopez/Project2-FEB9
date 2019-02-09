@@ -1,0 +1,112 @@
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 justify-content-center">Ready to create and event!</h1>
+            <p class="lead">Let's start to plan your party!</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="card">
+        <div class="card-body">
+            <form>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Event Name</label>
+                    <input type="text" class="form-control" id="enter-name" placeholder="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Enter Date</label>
+                    <input type="text" class="form-control" id="enter-date" placeholder="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Enter Time</label>
+                    <input type="text" class="form-control" id="enter-time" placeholder="time">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Enter Place</label>
+                    <input type="text" class="form-control" id="enter-place" placeholder="place">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Guest List</label>
+                    <input type="text" class="form-control" id="enter-guest" placeholder="enter email">
+                </div>
+
+                <button id="addBtn" type="button" class="btn btn-primary">Add Guest</button>
+
+                <div class="card">
+                    <div class="card-body">
+                        <table id="guests" class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Guest's e-mail</th>
+                                </tr>
+                            </thead>
+                            <tbody id="guestTable">
+                                {{#each guests}}
+                                <tr>
+                                    <td>
+                                        {{this.email}}
+                                    </td>
+                                </tr>
+                                {{/each}}
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+                <!-- agregar event listener-->
+
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="../public/styles/login.css" type="text/css" />
+
+
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        .container {
+            opacity: 0.9;
+        }
+
+        .form-group {
+            color: black;
+        }
+
+        p {
+            color: black;
+            text-align: center;
+        }
+
+        body {
+            background-image: url("https://nyc3.digitaloceanspaces.com/servercarlosesverde/elevenews/wp-content/uploads/2018/12/12222219/Party.jpg");
+            color: black;
+            background-size: 100%;
+        }
+
+        #container {
+            display: block;
+            align-items: center;
+            justify-content: center;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5cm;
+            width: 50%;
+            height: 50%;
+        }
+    </style>

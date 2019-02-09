@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4 justify-content-center">Ready to create and event!</h1>
+      <p class="lead">Let's start to plan your party!</p>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="card">
+    <div class="card-body">
+      <form>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Event Name</label>
+          <input id="enter-name" type="text" class="form-control" placeholder="name">
+
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Enter Date</label>
+          <input id="enter-date" type="date" class="form-control"  placeholder="date">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Enter Time</label>
+          <input type="time" class="form-control" id="enter-time" placeholder="time">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Enter Place</label>
+          <input type="time" class="form-control" id="enter-time" placeholder="place">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Guest List</label>
+          <input type="text" class="form-control" id="enter-frequency" placeholder="enter email">
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <table id="guests" class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Guest's e-mail</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/index.js"></script>

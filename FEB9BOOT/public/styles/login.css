@@ -1,0 +1,19 @@
+body {
+    background-image: url("https://nyc3.digitaloceanspaces.com/servercarlosesverde/elevenews/wp-content/uploads/2018/12/12222219/Party.jpg");
+    background-color:blanchedalmond;
+       background-size: 100%;
+   }
+   
+   form {
+   
+    display: block;
+    align-items: center;
+    justify-content: center;
+   
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 5cm;
+       width: 50%;
+       height: 50%;
+   
+   }
